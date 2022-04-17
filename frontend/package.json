@@ -1,90 +1,90 @@
 {
-	"@username/package-name": "crispy-system",
-	"version": "1.0.0",
-	"main": "dist/index.js",
-	"private": false,
-	"files": [
-		"dist",
-		"README.md"
-	],
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/rjhelm/crispy-system.git"
-	},
-	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject",
-		"storybook": "start-storybook -p 6006 -s public",
-		"build-storybook": "build-storybook -s public",
-		"clean": "rimraf dist",
-		"compile": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__"
-	},
-	"eslintConfig": {
-		"extends": [
-			"react-app",
-			"react-app/jest"
-		],
-		"overrides": [
-			{
-				"files": [
-					"**/*.stories.*"
-				],
-				"rules": {
-					"import/no-anonymous-default-export": "off"
-				}
-			}
-		]
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	},
+  "@username/package-name": "@rjhelm/crispy-system",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "private": true,
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjhelm/crispy-system.git"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "clean": "rimraf dist",
+    "compile": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
     "@storybook/addon-storyshots": "^6.4.22",
-		"@testing-library/jest-dom": "^5.16.4",
-		"@testing-library/react": "^13.1.1",
-		"@testing-library/user-event": "^13.5.0"
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^13.5.0"
   },
-	"devDependencies": {
-		"@babel/cli": "^7.17.6",
-		"@babel/preset-env": "^7.16.11",
-		"@babel/preset-react": "^7.16.7",
-		"@storybook/addon-actions": "^6.4.22",
-		"@storybook/addon-essentials": "^6.4.22",
-		"@storybook/addon-interactions": "^6.4.22",
-		"@storybook/addon-links": "^6.4.22",
-		"@storybook/builder-webpack5": "^6.4.22",
-		"@storybook/manager-webpack5": "^6.4.22",
-		"@storybook/node-logger": "^6.4.22",
-		"@storybook/preset-create-react-app": "^4.1.0",
-		"@storybook/react": "^6.4.22",
-		"@storybook/testing-library": "0.0.9",
-		"cross-env": "^7.0.3",
-		"webpack": "^5.72.0"
-	},
-	"peerDependencies": {
-		"react": "^18.0.0",
-		"react-dom": "^18.0.0",
-		"react-scripts": "5.0.1",
-		"web-vitals": "^2.1.4",
-		"react-test-renderer": "^18.0.0"
-	},
-	"bugs": {
-		"url": "https://github.com/rjhelm/crispy-system/issues"
-	},
-	"homepage": "https://github.com/rjhelm/crispy-system#readme",
-	"author": "Ryan Helm",
-	"license": "ISC",
-	"name": "@username/frontend",
-	"description": ""
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-interactions": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/builder-webpack5": "^6.4.22",
+    "@storybook/manager-webpack5": "^6.4.22",
+    "@storybook/node-logger": "^6.4.22",
+    "@storybook/preset-create-react-app": "^4.1.0",
+    "@storybook/react": "^6.4.22",
+    "@storybook/testing-library": "0.0.9",
+    "cross-env": "^7.0.3",
+    "webpack": "^5.72.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4",
+    "react-test-renderer": "^18.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/rjhelm/crispy-system/issues"
+  },
+  "homepage": "https://github.com/rjhelm/crispy-system#readme",
+  "author": "Ryan Helm",
+  "license": "ISC",
+  "name": "@rjhelm/crispy-system",
+  "description": ""
 }
