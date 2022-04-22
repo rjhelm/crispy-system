@@ -1,4 +1,4 @@
-# crispy-system
+# crispy-system/frontend
 
 ## UI Components for React App Development
 
@@ -15,3 +15,7 @@
 []: # Language: markdown
 []: # Path: README.md
 
+## Utilizes Jest and Storyshots for testing
+
+[]: # Language: markdown
+[]: # Path: README.md
